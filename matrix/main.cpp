@@ -65,6 +65,21 @@ class Matrix {
 
             return sum;
         }
+
+        // Matrix Multiplication
+        Matrix operator*(Matrix &m2) const {
+            if (cols != m2.getRows() || rows != m2.getCols() {
+                throw std::invalid_argument("Matrix dimensions do not match");
+            }
+
+            Matrix sum(rows, cols);
+
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    
+                }
+            }
+        }
 };
 
 int main() {
